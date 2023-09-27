@@ -7,14 +7,14 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   overflow-x: hidden;
 }
 
 .desktop-logo-and-menu,
 .desktop-egg-image,
 .desktop-pink-image,
-.desktop-image-container {
+.desktop-image {
   display: none;
 }
 
@@ -346,6 +346,16 @@ html {
     display: none;
   }
 
+  .desktop-image {
+    display: block;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px;
+  }
+
   .desktop-egg-image,
   .desktop-pink-image {
     display: block;
@@ -439,7 +449,6 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-    height: auto;
   }
 
   .desktop-cards img {
@@ -487,17 +496,6 @@ html {
 
   .thomas {
     margin-top: 38px !important;
-  }
-
-  .desktop-image-container {
-    display: flex;
-    width: 100%;
-  }
-
-  .desktop-image {
-    width: 100%;
-    height: 447px;
-    margin-top: 160px;
   }
 
   .footer-text:hover {
