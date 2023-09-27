@@ -11,11 +11,15 @@ html {
   overflow-x: hidden;
 }
 
+.desktop-logo-and-menu {
+  display: none;
+}
+
 .heading {
   position: relative;
 }
 
-.orangeBackgroundImage-div {
+.headingBackgroundImage-div {
   display: flex;
   background-image: url(/assets/mobile/image-header.jpg);
   background-size: cover;
@@ -267,4 +271,115 @@ html {
   align-items: center;
   gap: 30px;
   margin-top: 88px;
+}
+
+.right-triangle {
+  width: 0;
+  height: 0;
+  border-top: 24px solid transparent;
+  border-right: 24px solid #fffcf8;
+  display: block;
+  position: absolute;
+  right: 24px;
+  top: 85px;
+  display: none;
+}
+
+.white-menu-div {
+  width: 329px;
+  height: 325px;
+  display: flex;
+  background: #fffcf8;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  top: 18%;
+  position: absolute;
+  right: 24px;
+}
+
+.white-menu-div.notSelected {
+  display: none;
+}
+
+.menu-text {
+  color: #808397;
+  font-family: Barlow;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.143px;
+}
+
+.services {
+  margin-top: 32px;
+}
+
+.contact-button {
+  width: 140px;
+  height: 56px;
+  border-radius: 28px;
+  background: #fbd600;
+  color: #24303e;
+  font-family: Fraunces;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.107px;
+  text-transform: uppercase;
+  padding: 16px 32px;
+  margin-top: 32px;
+}
+
+@media (min-width: 1440px) {
+  .logo-and-menu {
+    display: none;
+  }
+
+  .headingBackgroundImage-div {
+    padding: 46px 40px;
+  }
+
+  .desktop-logo-and-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-menu-texts {
+    color: #fff;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: -0.129px;
+    display: flex;
+    gap: 46px;
+  }
+
+  .desktop-contact-button {
+    width: 140px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: #fff;
+    color: #24303e;
+    font-family: Fraunces;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: -0.107px;
+    text-transform: uppercase;
+  }
+
+  .desktop-contact-button:hover {
+    opacity: 0.2537;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+  }
 }
